@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+* {
+  margin-top: 0;
+  font-family: 'Roboto', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: yellow;
 }
+.app-container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-container {
+  height: 100%;
+  width: 100vw;
+  background-image: url("./assets/intro-page.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 30px;
+}
+
+.header {
+  color: #293264;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.header--title {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.header--subheader {
+  margin: 0;
+}
+
+.start-quiz-btn {
+  font-size: 1.1rem;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: #4D5B9E;
   color: white;
+  transition: all 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.start-quiz-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
