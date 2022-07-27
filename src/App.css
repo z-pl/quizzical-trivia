@@ -5,7 +5,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: yellow;
+  background-color: #F5F7FB;
 }
 .app-container {
   margin: 0;
@@ -58,4 +58,55 @@ html, body {
 .start-quiz-btn:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+
+.quiz-container {
+  height: 100%;
+  width: 100vw;
+  background-image: url("./assets/intro-page.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 45%;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.question--item {
+  color: #293264;
+}
+
+.answer--list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
+.answer-item {
+  border: 0.15em solid #4D5B9E;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  color: #293264;
+}
+
+.divider {
+  border: 1px solid #DBDEF0;
+  margin-top: 10px;
 }

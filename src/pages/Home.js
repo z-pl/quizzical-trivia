@@ -1,5 +1,10 @@
 import React from "react"
-export default function Home() {
+export default function Home(props) {
+
+  function handleClick() {
+    props.startQuizClick();
+  }
+
   return (
     <div className = "home-container">
       <div className = "header">
@@ -7,7 +12,7 @@ export default function Home() {
         <p className = "header--subheader">Test your general knowledge</p>
       </div>
 
-      <button className = "start-quiz-btn">Start quiz</button>
+      <button className = "start-quiz-btn" onClick={handleClick}>Start quiz</button>
     </div>
   )
 }
