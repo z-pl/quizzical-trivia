@@ -62,6 +62,8 @@ html, body {
 
 
 .quiz-container {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100vw;
   background-image: url("./assets/intro-page.png");
@@ -104,9 +106,61 @@ html, body {
   padding: 0.5em 1em;
   border-radius: 10px;
   color: #293264;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .divider {
   border: 1px solid #DBDEF0;
   margin-top: 10px;
+}
+
+.answer-item:hover{
+
+  cursor: pointer;
+}
+
+.answer-item.selected {
+  background-color: #D6DBF5;
+  border: 0.15em solid transparent;
+}
+
+.blue-btn {
+  border: 0px;
+  background-color: #4D5B9E;
+  color: white;
+  padding: 12px 24px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: large;
+  transition: all 0.2s;
+}
+
+.check-ans-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.checking-scheme .answer-item.selected.correct {
+  background-color: #94D7A2;
+}
+
+.checking-scheme .answer-item.selected {
+  background-color: #F8BCBC;
+}
+
+
+.checking--list .answer-item {
+  opacity: 50%;
+}
+.checking--list .answer-item.selected.correct {
+  background-color: #94D7A2;
+  opacity: 100%;
+}
+
+.checking--list .answer-item.correct {
+  background-color:  #F8BCBC;
+  border: 0px;
+  opacity: 100%;
 }
